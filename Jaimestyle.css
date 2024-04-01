@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: convergence;
+    src: url(font/Convergence-Regular.ttf);
+}
+
+nav{ 
+    font-family: montserrat;
+    color:white;
+    background-color: #149A3D;
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+
+}
+nav ul, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3em
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav div img{
+     width: auto ;
+     height: 4em;
+}
+nav p,li{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:white
+}
+.img15{
+    width: 30%;
+}
+header{
+    display: flex;
+    background-image: url(img/Tour-Parqu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    height: 5em;
+}
+
+#sec1{
+}
+#sec1 .img1{
+    width: 20em;
+    height: 20em;
+}
+#sec1 .divone{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    padding: 3em 0 0 3em;
+}
+#sec1 .par1{
+    width: 100%;
+    padding-top: 5em;
+}
+#sec1 .divtwo{
+    display: flex;
+    padding: 3em 3em 3em 3em;
+    gap: 5em;
+    text-align: left;
+}
+#sec2{
+    background-color: #d1d4d3;
+    padding: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#sec2 .div70{
+    padding-bottom: 3em;
+}
+#sec2 .h11{
+    border: solid #A79C9C 2px;
+    background-color: #A79C9C;
+    margin: 1em 1em 1em 1em;
+    border-width: 0.5em;
+    width: 30%;
+
+
+    
+}
+#sec2 .divpapa{
+
+    width: 100%;
+    display: flex;
+}
+#sec2 .ppp{
+    margin-bottom: 7em;
+
+}
+#sec2 .div80 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#sec2 .ol22{
+    width: 50%;
+}
+
+#sec2 .div80 div {
+    gap: 1em;
+    display: flex; 
+}
+#sec2 .h2ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#sec2 .imgfi{
+    display: flex;
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    align-self: center;
+}
+#sec3{
+}
+#sec3 div{
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+#sec3 .h12{
+    border: solid #A79C9C 2px;
+     background-color: #A79C9C;
+     margin: 1em 1em 1em 1em;
+     border-width: 0.5em;
+     width: 60%;
+
+}
+
+#sec3 .img19{
+    padding-top: 2em;
+    width: 100%;
+}
+#sec3 div :hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+}
+#sec4{
+    background-color: #d1d4d3;
+}
+#sec4 .h122{
+    border: solid #A79C9C 2px;
+    background-color: #A79C9C;
+    border-width: 0.5em;
+    margin: 1em 1em 1em 1em;
+    width: 30%;
+
+}
+#sec4 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+#sec4 .imgsec{
+    width: 100%;
+    padding-bottom: 5em;
+}
+#sec4 div{
+    align-self: center;
+    width: 50%;
+    align-self: center;
+    padding: 1em;
+    color: white;
+}
+#sec4 button{
+    width: 80%;
+    align-self: center;
+    padding: 1em;
+    border-radius: 2em;
+    color: white;
+    background-color: rgb(130, 127, 127);
+    margin-bottom: 2em;
+}
+#sec4 div :hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background-color: #149A3D;
+}
+footer{
+    font-family: montserrat;
+align-items: center;
+    padding: 4em;
+    background-color: #149A3D;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 1.2fr 1fr;
+}
+footer p{
+    text-align: center;
+    width: 14em;
+    align-self: center;
+    font-weight: bold;
+}
+.map{
+    margin-left: 12em;
+}
+.right{
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left;
+    align-self: flex-start ;
+}
+footer div{
+    display: flex;
+    grid-column: 3;
+    grid-row: 1;
+}
+.address{
+    justify-content: center;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.letra{
+    text-align: left;
+    font-size: medium;
+}
+a:hover{
+    color: #f0c914;
+    transition: background-color 0.5s;
+}
+
+@media only screen and (max-width: 900px)
+{
+    body{
+
+    }
+
+    nav{
+        flex-direction: column;
+        columns: 3;
+        height: 12em;
+    }
+    nav .im1top{
+        align-self: center;
+        width: 9em;
+    }
+
+    nav .menu, .menul{
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+        order: 1
+    }
+    nav .menul{
+        border: solid rgba(255, 255, 255, 0.052) 1px;
+        border-radius: 15px;
+        width: 100%;
+        justify-content: space-evenly;
+        order: 1
+    }
+    nav div img{
+         width: auto ;
+         height: 2em;
+    }
+    nav p,li{
+        font-size: 12px;
+    }
+    .img15{
+        margin: 2em 0 0 0;
+        align-self: center;
+        width: 20%;
+        height: 50%;
+    }
+
+.mapini{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -8em;
+}
+
+
+.a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;  
+    margin: -3em 0 0 0;
+}
+
+.divone{
+    flex-direction: column;
+    
+}
+.par1{
+    margin-top: -8em;
+}
+.divtwo{
+    flex-direction: column-reverse;
+}
+.div70{
+    flex-direction: column;
+}
+#sec2 .divpapa{
+    flex-direction: column;
+}
+nav ul, li{
+    padding: 1em;
+}
+
+#sec2 .h11{
+    width: 80%;
+}
+#sec3 div{
+    flex-direction: column;
+}
+#sec3 .img19{
+    flex-direction: column;
+    width: 45%;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 2em;
+}
+#sec4 .imgsec{
+    width: 110%;
+    justify-self: center;
+}
+footer{
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 20% 30%;
+}
+.map{
+    margin-left: -8%;
+    grid-column: 1;
+    grid-row: 1;
+}
+.right{
+    justify-self: center;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    align-self: flex-start ;
+}
+.address{
+    text-align: center;
+    justify-self: center;
+}
+.column{
+    justify-self: center;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+}
+.letra{
+    text-align: left;
+    font-size: medium;
+}
+
+}
+

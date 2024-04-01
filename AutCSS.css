@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: convergence;
+    src: url(font/Convergence-Regular.ttf);
+}
+body{
+    background-color: #EAF5FF;
+    font-family: montserrat;
+    gap: 3em;
+}
+nav{ 
+    font-family: montserrat;
+    color:white;
+    background-color: #149A3D;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.img15{
+    width: 40%;
+}
+
+.a{
+    width: 20%;
+    height: 20%;
+}
+nav .ul1, .li1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3em
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav div img{
+     width: auto ;
+     height: 4em;
+}
+nav p,li{
+    font-size: 20px;
+}
+.linkp{
+    text-decoration: none;
+    color:white
+}
+#num1{
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c1db2;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+#num1 video{
+    position: absolute;
+    object-fit: cover;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    mix-blend-mode: overlay;
+}
+#num1 div{
+    margin-left: 3em;
+}
+#num1 div .lin1{
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    font-family: convergence;
+}
+
+#num1 div .lin1 :hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+    color: #f0c914;
+}
+#sec1{
+    padding: 6%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 3em;
+}
+#sec1 h3{
+    font-family: convergence;
+    width: 100%;
+    font-size: 30px;
+}
+#sec1 img{
+    width: 35%;
+}
+#sec1 ul{
+    width: 70%;
+ 
+}
+#sec2{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+#sec2 .hea1{
+    font-family: convergence;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    padding: 2%;
+    color: white;
+}
+#sec2 .hovhea :hover{
+    background-color: #149A3D;
+}
+#sec2 p{
+    align-self: center;
+    width: 60%;
+    text-align: center;
+    padding: 3%;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+#sec2 img{
+    width: 65%;
+    align-self: center;
+    border-radius: 4%;
+    margin-bottom: 3em;
+}
+#sec3{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+#sec3 .hea2{
+    font-family: convergence;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    padding: 2%;
+    color: white;
+}
+#sec3 .hovhea :hover{
+    background-color: #149A3D;
+}
+#sec3 .d1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 3em;
+    padding: 3%;
+}
+#sec3 a{
+    display: flex ;
+    align-self: center  ;
+    justify-self: center;
+    color: #ffffff;
+    font-family: convergence;
+    text-decoration: none;
+    text-align: center;
+}
+
+#sec3  button{
+    border-style: none;
+    color: white;
+    background-color: #3d3d40;
+    width: 100% ;
+    padding: 1em 5em 1em 5em;
+    border-radius: 20px;
+}
+#sec3 button:hover{
+    transform: scale(1.05);
+    color: white;
+    background-color: #149A3D;
+    opacity: 1;
+}
+.galeryauto{
+    aspect-ratio: 10 / 16;
+    width: 25%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+}
+.galeryauto img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
+footer{
+    font-family: montserrat;
+    align-items: center;
+    padding: 4em;
+    background-color: #149A3D;
+    color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 1.2fr 1fr;
+    padding: 8em;
+}
+footer p{
+    text-align: center;
+    width: 14em;
+    align-self: center;
+    font-weight: bold;
+}
+.right{
+    grid-column: 3;
+    grid-row: 1;
+    text-align: left;
+    align-self: flex-start ;
+}
+footer div{
+    display: flex;
+    grid-column: 3;
+    grid-row: 1;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.letra{
+    text-align: left;
+    font-size: medium;
+}
+.linkimg :hover{
+    filter: invert(85%) sepia(42%) saturate(1899%) hue-rotate(354deg) brightness(101%) contrast(88%);
+    opacity: 1;
+}
+.linkp :hover{
+    color: #f0c914;
+}
+@media only screen and (max-width: 1000px)
+{
+    nav{
+        flex-direction: column;
+        columns: 3;
+        height: 12em;
+    }
+    nav .im1top{
+        align-self: center;
+        width: 9em;
+    }
+
+    nav .menu, .menul{
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+        order: 1
+    }
+    nav .menul{
+        border: solid rgba(255, 255, 255, 0.052) 1px;
+        border-radius: 15px;
+        width: 100%;
+        justify-content: space-evenly;
+        order: 1
+    }
+    nav div img{
+         width: auto ;
+         height: 2em;
+    }
+    nav p,li{
+        font-size: 12px;
+    }
+
+    #num1 div .lin1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #num1 div{
+        margin-left: 0;
+    }
+    #sec1{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 3em;
+    }
+    #sec1 img{
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    #sec2 p{
+        padding: 1%;
+        width: 80%;
+    }
+    #sec2 img{
+        width: 90%;
+    }
+    #sec3{
+        height: 60vh;
+        gap: 3em;
+    }
+    #sec3 .d1{
+        gap: 3em;
+        flex-direction: column;
+
+    }
+    .galeryauto{
+        aspect-ratio: 10 / 16;
+        width: 80%;
+        position: relative;
+        display: flex;
+    }
+
+    footer{
+        height: 58vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 20% 30%;
+    }
+    .right{
+        justify-self: center;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        align-self: flex-start ;
+        align-self: center;
+    }
+    .address{
+        text-align: center;
+        justify-self: center;
+    }
+    .column{
+        justify-self: center;
+        text-align: left;
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img15{
+        align-self: center;
+        width: 20%;
+        height: 50%;
+    }
+
+.mapini{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -12em;
+}
+
+
+.a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;  
+    margin: -3em 0 0 0;
+}
+}
