@@ -448,6 +448,10 @@ p,button{
     background-color: #555;
   }
 
+#Names{
+    text-align:center;
+}
+
   /*Media Query*/
 
   @media only screen and (max-width: 900px) {
